@@ -1,0 +1,41 @@
+<!-- 
+********************************************************************************************
+Created on : January, 31st, 2018
+Developer : Gaurav Bhardwaj
+Website: www.ittwist.com
+********************************************************************************************
+THE BELOW CODE CONTAINS THE HTML MARKUP
+FEEL FREE TO USE THE CODE
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Beautifier | Gaurav ToolBox</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css"">
+    <script type=" text/javascript" src="../static/js/main.js">
+    </script>
+    <meta name="description" content="Beautify your JSON - Pretty Printer."/>
+</head>
+<body onload="onLoadBody()">
+    <div class="header-menu">
+        <strong>Json Pretty Print - Gaurav ToolBox</strong>
+    </div>
+    <form method="POST" action="">
+        <div class="left">
+            <textarea class="top-marg" rows="32" cols="92" name="requested_text">{% print(req_text) %}</textarea>
+            <button class="abs-center">Pretty Print >></button>
+        </div>
+        <div class="right">
+            <textarea class="top-marg" rows="32" cols="92" name="response_text" readonly>{% print(res_text) %}</textarea>
+        </div>
+    </form>
+    <input id="error" class="no-visible" value="{% print(ErrorName) %}"></input>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="onClickClose()">&times;</span>
+            <p class="align-center">{% print(ErrorName) %}</p>
+        </div>
+    </div>
+</body>
+</html>
