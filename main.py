@@ -30,7 +30,7 @@ def index():
         if req_text.strip()!="":
             res_text,HasError=formatJson(req_text,res_text)
             if HasError:
-                ErrorName="Error While Parsing JSON String"
+                ErrorName="Error While Parsing JSON"
             else:
                 ErrorName=""
         else:
