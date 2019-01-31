@@ -35,7 +35,10 @@ FEEL FREE TO USE THE CODE
     display: none;
 }
 .top-marg{
-    margin-top:60px
+    margin-top:7%
+}
+.top-margin{
+    margin-top:20%;
 }
 .modal {
     display: none; 
@@ -51,16 +54,16 @@ FEEL FREE TO USE THE CODE
     background-color: rgba(0,0,0,0.4); 
   }
   .modal-content {
-    background-color:#f44336;
+    background-color:#f44336 !important;
     margin: auto;
     padding: 20px;
-    border: 1px solid #f44336;
+    border: 1px solid #f44336 !important;
     width: 80%;
     margin-top: 12%;
-    color: white;
+    color: white !important;
   }
   .close {
-    color: white;
+    color: white !important;
     float: right;
     font-size: 23px;
     font-weight: bold;
@@ -75,10 +78,18 @@ FEEL FREE TO USE THE CODE
   button {
     background-color: #f44336; 
     border: 1px solid red; 
-    color: white; 
+    color: white !important; 
     padding: 10px 12px; 
     cursor: pointer; 
   }
   button:hover {
     opacity:0.9
   }
+  .red-white{
+      color:white !important;
+      background: #f44336 !important;
+  }
+  .red-white a{
+    color:white !important;
+    background: #f44336 !important;
+}
