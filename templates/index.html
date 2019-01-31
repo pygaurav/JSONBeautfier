@@ -15,19 +15,35 @@ FEEL FREE TO USE THE CODE
     <link rel="stylesheet" type="text/css" href="../static/css/style.css"">
     <script type=" text/javascript" src="../static/js/main.js">
     </script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <meta name="description" content="Beautify your JSON - Pretty Printer."/>
 </head>
 <body onload="onLoadBody()">
-    <div class="header-menu">
-        <strong>Json Pretty Print - Gaurav ToolBox</strong>
-    </div>
+          <nav class="navbar navbar-inverse navbar-fixed-top red-white">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand text-uppercase" href="">Json Pretty Print - Gaurav ToolBox</a>
+                    
+                  </div>
+                  <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://www.linkedin.com/in/gauravlogical/">LinkedIn</a></li>
+                        <li><a href="https://twitter.com/@pygaurav">Twitter</a></li>
+                        <li><a href="https://github.com/pygaurav">GitHub</a></li>
+                      </ul>
+                </div>
+              </nav>
     <form method="POST" action="">
-        <div class="left">
-            <textarea class="top-marg" rows="32" cols="92" name="requested_text">{% print(req_text) %}</textarea>
-            <button class="abs-center">Pretty Print >></button>
-        </div>
-        <div class="right">
-            <textarea class="top-marg" rows="32" cols="92" name="response_text" readonly>{% print(res_text) %}</textarea>
+            <button class="top-marg center-block">Pretty Print >></button>
+        <div class="row ">
+            <textarea  rows="30" class="col-sm-6" name="requested_text">{% print(req_text) %}</textarea>
+            <textarea  rows="30" class="col-sm-6"  name="response_text" readonly>{% print(res_text) %}</textarea>
         </div>
     </form>
     <input id="error" class="no-visible" value="{% print(ErrorName) %}"></input>
