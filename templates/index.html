@@ -40,13 +40,14 @@ FEEL FREE TO USE THE CODE
                 </div>
               </nav>
     <form method="POST" action="">
-            <button class="top-marg center-block">Pretty Print >></button>
-        <div class="row ">
-            <textarea  rows="30" class="col-sm-6" name="requested_text">{% print(req_text) %}</textarea>
-            <textarea  rows="30" class="col-sm-6"  name="response_text" readonly>{% print(res_text) %}</textarea>
+            
+        <div class="row top-marg">
+            <textarea placeholder="Paste Unformatted JSON String Here......" rows="20" class="col-sm-6" name="requested_text">{% print(req_text) %}</textarea>
+            <textarea placeholder="Formatted JSON will appear here after you press Pretty Print" rows="20" class="col-sm-6"  name="response_text" readonly>{% print(res_text) %}</textarea>
         </div>
     </form>
     <input id="error" class="no-visible" value="{% print(ErrorName) %}"></input>
+    <button class=" center-block">Pretty Print >></button>
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="onClickClose()">&times;</span>
