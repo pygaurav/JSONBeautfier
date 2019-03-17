@@ -98,3 +98,6 @@ FEEL FREE TO USE THE CODE
     margin-right: 0px !important;
     margin-left: 0px !important;
 }
+textarea{
+    resize: none;
+}
