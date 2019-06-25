@@ -13,9 +13,44 @@ FEEL FREE TO USE THE CODE
     left:0px;
     top:0px;
     width:96.5%;
-    background-color:#f44336;
-    color: white;
+    background-color:#fff;
+    color: #000;
     text-align: center;
+}
+a:hover {
+    text-decoration: none;
+}
+.fulllength{
+    width: 100vw !important;
+    height: 80vh !important;
+    overflow: hidden;
+    font-size: 17px;
+}
+.navbar-toggle {
+    position: absolute !important;
+    background: #f2f2f2 !important;
+    right: 0 !important;
+    float: right !important;
+    top: 10px !important;
+    padding: 12px 10px;
+    color: #000 !important;
+    margin-right: 15px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.navbar-toggle .icon-bar {
+    background: #000 !important;
+}
+.navbar-nav {
+    margin: 12.5px -15px !important;
+    text-align: center !important;
+    /* border-bottom: 1px solid #000; */
+}
+html, body {
+    height: 100%;
 }
 .align-center{
     text-align: center;
@@ -35,7 +70,7 @@ FEEL FREE TO USE THE CODE
     display: none;
 }
 .top-marg{
-    margin-top: 5%;
+    /* margin-top: 5%; */
     margin-bottom: 1%;
 }
 .top-margin{
@@ -55,16 +90,16 @@ FEEL FREE TO USE THE CODE
     background-color: rgba(0,0,0,0.4); 
   }
   .modal-content {
-    background-color:#f44336 !important;
+    background-color:#fff !important;
     margin: auto;
     padding: 20px;
-    border: 1px solid #f44336 !important;
+    border: 1px solid #fff !important;
     width: 80%;
     margin-top: 12%;
-    color: white !important;
+    color: black !important;
   }
   .close {
-    color: white !important;
+    color: black !important;
     float: right;
     font-size: 23px;
     font-weight: bold;
@@ -87,12 +122,12 @@ FEEL FREE TO USE THE CODE
     opacity:0.9
   }
   .red-white{
-      color:white !important;
-      background: #f44336 !important;
+      color:black !important;
+      background: white !important;
   }
   .red-white a{
-    color:white !important;
-    background: #f44336 !important;
+    color:black !important;
+    background: white !important;
 }
 .row {
     margin-right: 0px !important;
