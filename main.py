@@ -63,7 +63,7 @@ def response_values():
             ErrorName=""
     else:
         ErrorName="Please Enter Something"
-    return render_template('response.html',req_text=req_text,res_text=res_text,ErrorName=ErrorName)
+    return render_template('/response.html',req_text=req_text,res_text=res_text,ErrorName=ErrorName)
         
 
 
