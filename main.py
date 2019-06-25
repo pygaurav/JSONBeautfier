@@ -20,6 +20,7 @@ def index():
         Updated JSON : String
         Error Message if any
     """
+    
     req_text=""
     res_text=""
     ErrorName=""
@@ -35,10 +36,7 @@ def index():
                 ErrorName=""
         else:
             ErrorName="Please Enter Something"
-    if(HasError==False):    
-        return render_template('response.html',req_text=req_text,res_text=res_text,ErrorName=ErrorName)
-    else:
-        return render_template('index.html',req_text=req_text,res_text=res_text,ErrorName=ErrorName)
+    return render_template('index.html',req_text=req_text,res_text=res_text,ErrorName=ErrorName)
 
 
 def formatJson(req_text,res_text):
