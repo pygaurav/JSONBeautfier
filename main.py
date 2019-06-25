@@ -36,7 +36,11 @@ def index():
                 ErrorName=""
         else:
             ErrorName="Please Enter Something"
-    return render_template('response.html',req_text=req_text,res_text=res_text,ErrorName=ErrorName)
+    if HasError==True:
+        return render_template('index.html',req_text=req_text,res_text=res_text,ErrorName=ErrorName)
+    else
+        return render_template('response.html',req_text=req_text,res_text=res_text,ErrorName=ErrorName)
+        
 
 
 def formatJson(req_text,res_text):
