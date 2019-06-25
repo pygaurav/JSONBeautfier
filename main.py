@@ -39,7 +39,7 @@ def index():
     # return render_template('index.html',req_text=req_text,res_text=res_text,ErrorName=ErrorName)
 
 
-@app.route("/Response",methods=['GET', 'POST'])
+@app.route("/Final",methods=['GET', 'POST'])
 def response_values():
     """This code is the heart of the project. This will return the formatted JSON Back to user
     
@@ -63,7 +63,7 @@ def response_values():
             ErrorName=""
     else:
         ErrorName="Please Enter Something"
-    return render_template('/templates/response.html',req_text=req_text,res_text=res_text,ErrorName=ErrorName)
+    return render_template('final.html',req_text=req_text,res_text=res_text,ErrorName=ErrorName)
         
 
 
