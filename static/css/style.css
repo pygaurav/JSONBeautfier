@@ -101,3 +101,6 @@ FEEL FREE TO USE THE CODE
 textarea{
     resize: none;
 }
+.navbar{
+    min-height: 68px !important;
+}
