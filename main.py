@@ -90,4 +90,4 @@ def formatJson(req_text,res_text):
     return res_text,HasError
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
