@@ -39,7 +39,7 @@ def index():
     # return render_template('index.html',req_text=req_text,res_text=res_text,ErrorName=ErrorName)
 
 
-@app.route("/Final",methods=['GET', 'POST'])
+@app.route("/final",methods=['GET', 'POST'])
 def response_values():
     """This code is the heart of the project. This will return the formatted JSON Back to user
     
