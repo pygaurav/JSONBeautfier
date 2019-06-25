@@ -37,6 +37,33 @@ def index():
         else:
             ErrorName="Please Enter Something"
     return render_template('index.html',req_text=req_text,res_text=res_text,ErrorName=ErrorName)
+
+
+@app.route("/response",methods=['GET', 'POST'])
+def response():
+    """This code is the heart of the project. This will return the formatted JSON Back to user
+    
+    Returns:
+        Updated JSON : String
+        Error Message if any
+    """
+    
+    req_text=""
+    res_text=""
+    ErrorName=""
+    if request.method == 'POST':
+        #Code for handling the POST Logic
+        req_text=request.form['requested_text']
+        res_text=request.form['response_text']
+        if req_text.strip()!="":
+            res_text,HasError=formatJson(req_text,res_text)
+            if HasError:
+                ErrorName="Error While Parsing JSON"
+            else:
+                ErrorName=""
+        else:
+            ErrorName="Please Enter Something"
+    return render_template('response.html',req_text=req_text,res_text=res_text,ErrorName=ErrorName)
         
 
 
