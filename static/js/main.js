@@ -37,6 +37,7 @@ function copyFunc() {
     textArea.select();
       document.execCommand("copy");
     textArea.remove();
+    alert("Copied the text: " + textArea.value);
 
   /* Copy the text inside the text field */
 
