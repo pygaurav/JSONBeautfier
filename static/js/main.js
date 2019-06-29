@@ -15,6 +15,9 @@ function onLoadBody () {
     span = document.getElementsByClassName("close")[0];
     error = document.getElementById('error');
     if (error.value !== "") {
+        document.getElementsByClassName("top-marg").style.display = "none";
+        document.getElementsByClassName("copybutton").style.display = "none";
+        document.getElementsByClassName("back").style.display = "none";
         modal.style.display = "block";
     }
     else {
