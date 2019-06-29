@@ -28,7 +28,7 @@ FEEL FREE TO USE THE CODE
  </head>
  <body onload="onLoadBody()">
  <!--                             -->
-                            <span class="copybutton" onclick="copyFunc()">
+                            <span class="copybutton" onclick="copyFunc()" style="display:none">
 <img src="http://www.iconarchive.com/download/i83507/custom-icon-design/mono-general-2/copy.ico" width="32" height="32">
                                                                                                                        <span id="copy">Copy</span>
 </span>
@@ -54,11 +54,11 @@ FEEL FREE TO USE THE CODE
                  </div>
                </nav>
              
-         <div class="row top-marg">
+         <div class="row top-marg" style="display:none">
              <!-- <textarea placeholder="Paste Unformatted JSON String Here......" rows="20" class="col-md-6 col-sm-12" name="requested_text">{% print(req_text) %}</textarea> -->
              <div name="requested_text"><pre>{% print(res_text) %}</pre></div>
          </div>
-         <a class="back" href="/"><button class="center-block">Back</button></a>
+         <a class="back" style="display:none" href="/"><button class="center-block">Back</button></a>
      <input id="error" class="no-visible" value="{% print(ErrorName) %}"></input>
      
      <div id="myModal" class="modal">
