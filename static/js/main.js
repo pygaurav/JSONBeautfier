@@ -23,6 +23,9 @@ function onLoadBody () {
     }
     else {
         modal.style.display = "none";
+        document.getElementsByClassName("top-marg")[0].style.display = "block";
+        document.getElementsByClassName("copybutton")[0].style.display = "block";
+        document.getElementsByClassName("back")[0].style.display = "block";
     }
 }
 // Code for close button of modal close element
