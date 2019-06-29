@@ -11,16 +11,19 @@ FEEL FREE TO USE THE CODE
 var modal,span,error;
 // This code will trigger the modal of error when the error message will come, otherwise it will be hidden
 function onLoadBody () {
+            document.getElementsByClassName("top-marg")[0].style.display = "none";
+        document.getElementsByClassName("copybutton")[0].style.display = "none";
+        document.getElementsByClassName("back")[0].style.display = "none";
     modal = document.getElementById('myModal');
     span = document.getElementsByClassName("close")[0];
     error = document.getElementById('error');
     if (error.value !== "") {
-        document.getElementsByClassName("top-marg")[0].style.display = "none";
-        document.getElementsByClassName("copybutton")[0].style.display = "none";
-        document.getElementsByClassName("back")[0].style.display = "none";
         modal.style.display = "block";
     }
     else {
+                document.getElementsByClassName("top-marg")[0].style.display = "block";
+        document.getElementsByClassName("copybutton")[0].style.display = "block";
+        document.getElementsByClassName("back")[0].style.display = "block";
         modal.style.display = "none";
     }
 }
