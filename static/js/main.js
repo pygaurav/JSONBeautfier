@@ -26,3 +26,17 @@ function onClickClose () {
     modal = document.getElementById('myModal');
     modal.style.display = "none";
 }
+function copyFunc() {
+  /* Get the text field */
+  var copyText = document.getElementsByTagName("pre")[0].innerHTML;
+
+  /* Select the text field */
+  copyText.select();
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+ document.getElementById("copy").innerHTML = "Copied";
+ document.getElementById("copy").style ="color:green"
+}
