@@ -32,12 +32,11 @@ function copyFunc() {
 
   /* Select the text field */
   var textArea = document.createElement("textarea");
-    textArea.value = copyText.textContent;
+    textArea.value = copyText;
     document.body.appendChild(textArea);
     textArea.select();
       document.execCommand("copy");
     textArea.remove();
-    alert("Copied the text: " + textArea.value);
 
   /* Copy the text inside the text field */
 
