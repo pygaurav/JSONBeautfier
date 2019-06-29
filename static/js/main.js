@@ -23,8 +23,7 @@ function onLoadBody () {
 }
 // Code for close button of modal close element
 function onClickClose () {
-    modal = document.getElementById('myModal');
-    modal.style.display = "none";
+    location.href="/";
 }
 function copyFunc() {
   /* Get the text field */
