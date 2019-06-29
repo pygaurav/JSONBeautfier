@@ -24,6 +24,7 @@ FEEL FREE TO USE THE CODE
     height: 64px;
     top: 19%;
     z-index: 100;
+    cursor:pointer;
 }
 a:hover {
     text-decoration: none;
